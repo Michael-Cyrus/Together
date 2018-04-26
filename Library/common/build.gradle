@@ -11,7 +11,7 @@ android {
         targetSdkVersion rootProject.ext.android["targetSdkVersion"]
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -44,9 +44,15 @@ dependencies {
     api rootProject.ext.dependencies["rxbinding"]
     api rootProject.ext.dependencies["rxpermissions"]
     api rootProject.ext.dependencies["rxlifecycle"]
-    api rootProject.ext.dependencies["rxlifecycle-components"]
+    api rootProject.ext.dependencies["rxlifecycle_components"]
     api rootProject.ext.dependencies["eventbus"]
     api rootProject.ext.dependencies["logger"]
     api rootProject.ext.dependencies["smarttablayout"]
     api rootProject.ext.dependencies["smarttablayout_utils"]
+    api rootProject.ext.dependencies["okhttp3"]
+    api rootProject.ext.dependencies["retrofit2"]
+    api rootProject.ext.dependencies["retrofit2_adapter"]
+    api rootProject.ext.dependencies["converter_gson"]
+    api rootProject.ext.dependencies["multidex"]
+    api rootProject.ext.dependencies["PhotoView"]
 }
