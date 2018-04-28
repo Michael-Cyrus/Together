@@ -15,10 +15,10 @@ import com.bm.library.PhotoView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
-import com.michael.common.base.BaseActivity;
 import com.michael.common.widget.CenterTitleToolbar;
 import com.michael.common.widget.HackyViewPager;
 import com.michael.romance.R;
+import com.michael.romance.base.BasicActivity;
 import com.michael.romance.bean.ImageBean;
 import com.michael.romance.config.Constant;
 
@@ -31,7 +31,7 @@ import butterknife.BindView;
  * Created by Michael on 2018/4/16.
  */
 
-public class PhotoViewBrowseActivity extends BaseActivity {
+public class PhotoViewBrowseActivity extends BasicActivity {
 
     @BindView(R.id.viewpager)
     HackyViewPager viewpager;
@@ -53,13 +53,7 @@ public class PhotoViewBrowseActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-        setSupportActionBar(toolbar);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        initToolbar(toolbar);
         renamePic.setVisibility(View.GONE);
         imageList = (ArrayList<ImageBean>) getIntent().getSerializableExtra(Constant.DATA_OBJECT);
         picCount.setText(1 + File.separator +imageList.size());

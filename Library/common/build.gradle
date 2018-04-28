@@ -55,4 +55,5 @@ dependencies {
     api rootProject.ext.dependencies["converter_gson"]
     api rootProject.ext.dependencies["multidex"]
     api rootProject.ext.dependencies["PhotoView"]
+    api rootProject.ext.dependencies["recyclerViewHelper"]
 }

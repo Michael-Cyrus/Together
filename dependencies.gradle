@@ -54,5 +54,6 @@ project.ext {
 
             "smarttablayout"        :'com.ogaclejapan.smarttablayout:library:1.6.1@aar',
             "smarttablayout_utils"  :'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar',
+            "recyclerViewHelper"  :'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30',
     ]
 }

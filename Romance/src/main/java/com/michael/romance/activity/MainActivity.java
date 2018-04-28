@@ -5,13 +5,13 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
 
-import com.michael.common.base.BaseActivity;
 import com.michael.romance.R;
+import com.michael.romance.base.BasicActivity;
 import com.michael.romance.config.DataServer;
 
 import butterknife.BindView;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BasicActivity {
 
 
     @BindView(R.id.tv)
